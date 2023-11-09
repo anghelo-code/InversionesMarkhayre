@@ -1,0 +1,105 @@
+/* Estilo para el body */
+body {
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el relleno predeterminado del body */
+}
+
+/* Estilo para el header */
+header {
+    background-color: rgba(51, 51, 51, 0); /* Color de fondo del header */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    position: fixed; /* El header se mantiene fijo en la parte superior de la pantalla */
+    top: 0; /* Coloca el header en la parte superior de la pantalla */
+    width: 97%; /* Ancho completo de la pantalla */
+    z-index: 999; /* Coloca el header encima de otros elementos */
+    transition: background-color 0.3s;
+}
+
+/* Estilo para el logo de la marca */
+.logo {
+    float: left; /* Coloca el logo en la parte izquierda */
+}
+
+/* Estilo para las opciones de navegación */
+.nav {
+    float: right; /* Coloca las opciones en la parte derecha */
+}
+
+/* Estilo específico para los botones de navegación */
+.nav a {
+    display: inline-block; /* Hace que los enlaces sean elementos en línea con anchura y altura */
+    padding: 10px 15px; /* Espaciado interno de los botones */
+    text-decoration: none; /* Sin subrayado en los botones */
+    color: #fff; /* Color del texto de los botones */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; /* Negrita */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno de enfoque */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+}
+
+.contact-button {
+    background-color: transparent; /* Sin relleno */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: 1px solid #B72E2E; /* Contorno rojo de 2 píxeles */
+    border-radius: 5px; /* Borde redondeado */
+    font-family: 'Open Sans', sans-serif; /* Fuente estilizada */
+    font-weight: bold; /* Negrita */
+    font-size: 22px;
+    text-decoration: none; /* Sin subrayado en el texto del botón */
+}
+
+/* Estilo para la sección de descripción */
+.description {
+    text-align: center; /* Centra el texto de la descripción */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    background: url('headerimg.png') center center/cover; /* Fondo de imagen */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para el párrafo de descripción */
+.description p {
+    font-size: 24px; /* Tamaño de letra más grande */
+    font-family: 'Open Sans', sans-serif; /* Fuente distinta */
+    margin-bottom: 20px; /* Margen inferior */
+    padding: 0% 25% 0% 25%;
+}
+
+.description h1 {
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif; /* Fuente distinta */
+}
+
+/* Estilo para la sección "About Us" */
+.about-us {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    padding: 40px 100px 40px 100px; /* Espaciado superior e inferior */
+    display: flex; /* Usa el modelo de caja flexible (flexbox) */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para la imagen en la sección "About Us" */
+.about-us img {
+    height: 300px;
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilo para el contenido de texto en la sección "About Us" */
+.about-us-text {
+    max-width: 600px; /* Ancho máximo del contenido de texto */
+    padding-right: 150px;
+}
+
+.about-us-text h2 {
+    color: #4F4C4C;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us-text p{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
