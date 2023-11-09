@@ -6,6 +6,9 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   
@@ -14,7 +17,7 @@
     <h2>Servicios</h2>
     <div  class="container">
       <article class="servicios_article">
-        <img src="#" alt=""  class="servicios_article-img">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
         
         <div class="servicios_article-content">
           <h3 class="servicios_article-title titleBlue">SISTEMAS DE SOLDADURA</h3>
@@ -24,12 +27,37 @@
             <li class="servicios_article-item">Soldadura de arco metálico con gas</li>
           </ul>
 
-          <button class="servicios_article-button buttonBLue">Saber más</button>
+          <button 
+            class="servicios_article-button buttonBLue" 
+            onclick="openModal('modal1')"
+          >
+            Saber más
+          </button>
         </div>
+
+        <dialog id="modal1" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titleBlue">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonBLue" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal1')" >x</button>
+          </div>
+          
+        </dialog>
       </article>
 
       <article class="servicios_article">
-        <img src="#" alt=""  class="servicios_article-img">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
 
         <div class="servicios_article-content">
           <h3 class="servicios_article-title titlePurple">MONTAJE DE ESTRUCTURAS</h3>
@@ -39,12 +67,37 @@
             <li class="servicios_article-item">Tipos de soldadura</li>
           </ul>
 
-          <button class="servicios_article-button buttonPurple">Saber más</button>
+          <button 
+            class="servicios_article-button buttonPurple" 
+            onclick="openModal('modal2')"
+          >
+            Saber más
+          </button>
         </div>
+
+        <dialog id="modal2" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titlePurple">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonPurple" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal2')" >x</button>
+          </div>
+          
+        </dialog>
       </article>
 
       <article class="servicios_article">
-        <img src="#" alt=""  class="servicios_article-img">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
         <div class="servicios_article-content">
           <h3 class="servicios_article-title titleRed">ANCLAJES Y FIJACIONES DE ESTRUCTURAS</h3>
           <ul class="servicios_article-ul">
@@ -52,12 +105,37 @@
             <li class="servicios_article-item">Cimiento para construcciones de acero</li>
           </ul>
 
-          <button class="servicios_article-button buttonRed">Saber más</button>
+          <button 
+            class="servicios_article-button buttonRed" 
+            onclick="openModal('modal3')"
+          >
+            Saber más
+          </button>
         </div>
+
+        <dialog id="modal3" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titleRed">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonRed" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal3')" >x</button>
+          </div>
+          
+        </dialog>
       </article>
 
       <article class="servicios_article">
-        <img src="#" alt=""  class="servicios_article-img">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
         <div class="servicios_article-content">
           <h3 class="servicios_article-title titleBlue">Titulo servicio</h3>
           <ul class="servicios_article-ul">
@@ -66,8 +144,33 @@
             <li class="servicios_article-item">item3</li>
           </ul>
 
-          <button class="servicios_article-button buttonBLue">Saber más</button>
+          <button 
+            class="servicios_article-button buttonBLue" 
+            onclick="openModal('modal4')"
+          >
+            Saber más
+          </button>
         </div>
+
+        <dialog id="modal4" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titleBlue">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonBLue" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal4')" >x</button>
+          </div>
+          
+        </dialog>
       </article>
 
     </div>

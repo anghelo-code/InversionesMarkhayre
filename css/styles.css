@@ -1,7 +1,18 @@
 * {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #4F4C4C;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  text-transform: uppercase;
+  margin-bottom: 45px;
 }
 
 :root {
@@ -17,9 +28,6 @@
   padding: 60px;
 }
 
-.servicios h2 {
-  text-align: center;
-}
 
 .servicios .container {
   display: flex;
@@ -41,12 +49,12 @@
   width: 27%;
   padding: 0px 0px 10px 0px;
   border-radius: 5px;
-  min-width: 300px;
+  min-width: 330px;
 }
 
 .servicios_article-img {
   border-radius: 5px 5px 0px 0px;
-  object-fit: cover;
+  object-fit: none;
   width: 100%;
   height: 140px;
 }
@@ -82,8 +90,8 @@
 .servicios_article-button {
   background-color: #fff;
   font-size: 24px;
-  transition: all ease-in-out 0.5s;
-  padding: 4px 8px;
+  transition: all ease-in-out 0.3s;
+  padding: 4px 20px;
   margin: 10px 0px;
 }
 
@@ -91,6 +99,88 @@
   color: #fff;
 }
 
+
+
+/* --------------------------------------- Modal ------------------------------- */
+
+.modal-btnclose {
+  font-size: 20px;
+  position: absolute;
+  padding: 14px;
+  right: 8px;
+  top: 3px;
+  color: #aaa;
+  background-color: transparent;
+  border: none;
+  transition: all ease-in-out .3s;
+}
+
+.modal-btnclose:hover {
+  color: #000;
+}
+
+.modal {
+  border: none;
+  margin: auto;
+}
+
+.modal_container {
+  max-width: 800px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.modal_img {
+  background-image: url('../img/Ropa-de-soldador.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.modal_content {
+  padding: 20px;
+  width: 60%;
+  min-width: 360px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal_content-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 15px 0px;
+  margin-bottom: 10px;
+}
+
+.modal_content-ul {
+  padding: 20px 20px;
+}
+
+.modal_content-item {
+  color: #666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.modal_content-button {
+  background-color: #fff;
+  font-size: 24px;
+  transition: all ease-in-out 0.3s;
+  padding: 4px 20px;
+  margin-top: 20px;
+}
+
+.modal_content-button:hover { 
+  color: #fff;
+}
 
 
 
@@ -138,3 +228,28 @@
 }
 
 
+
+
+@media screen and ( max-width : 900px ) {
+  .modal_container {
+    height: 600px;
+    flex-direction: column;
+    max-height: 900px;
+    display: flex;
+    border-radius: 5px;
+    width: auto;
+    max-width: 450px;
+  }
+  
+  .modal_img {
+    width: 100%;
+    height: 40%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal_content {
+    width: 100%;
+    height: 60%;
+  }
+}
