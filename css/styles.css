@@ -21,6 +21,31 @@ h2 {
   --blue: #035A76;;
 }
 
+
+/* -------------------------------- Destacados  --------------------------- */
+
+.destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 10px;
+}
+
+.destacados_img {
+  max-width: 100%;
+  width: 850px;
+}
+
+.destacados_p {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
 /* -------------------------------- Servicios  --------------------------- */
 
 .servicios {
