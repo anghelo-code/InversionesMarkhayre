@@ -23,18 +23,37 @@ h2 {
   --blue: #035A76;;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+
 
 /* -------------------------------- Header  --------------------------- */
 
 header {
   background-color: rgba(51, 51, 51, 0); /* Color de fondo del header */
   color: #fff; /* Color del texto */
-  padding: 20px; /* Espaciado interno */
+  padding: 20px 0px; /* Espaciado interno */
   position: fixed; /* El header se mantiene fijo en la parte superior de la pantalla */
   top: 0; /* Coloca el header en la parte superior de la pantalla */
   width: 100%; /* Ancho completo de la pantalla */
   z-index: 999; /* Coloca el header encima de otros elementos */
   transition: background-color 0.3s;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header_mobile {
+  display: none !important;
 }
 
 /* Estilo para el logo de la marca */
@@ -60,34 +79,19 @@ header {
   cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
 }
 
-.contact-button {
-  background-color: transparent; /* Sin relleno */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  border: 1px solid #B72E2E; /* Contorno rojo de 2 píxeles */
-  border-radius: 5px; /* Borde redondeado */
-  font-family: 'Open Sans', sans-serif; /* Fuente estilizada */
-  font-weight: bold; /* Negrita */
-  font-size: 22px;
-  text-decoration: none; /* Sin subrayado en el texto del botón */
-}
 /* -------------------------------- Descripcion  --------------------------- */
 
 .description {
-  text-align: center; /* Centra el texto de la descripción */
-  padding: 40px 0; /* Espaciado superior e inferior */
+  text-align: center; /* Centra el texto de la descripción */ 
   background: url('../img/headerimg.png') center center/cover; /* Fondo de imagen */
   background-size: cover;
   background-position: center;
   color: #fff; /* Color del texto */
-}
-
-/* Estilo para el párrafo de descripción */
-.description p {
-  font-size: 24px; /* Tamaño de letra más grande */
-  font-family: 'Open Sans', sans-serif; /* Fuente distinta */
-  margin-bottom: 20px; /* Margen inferior */
-  padding: 0% 25% 0% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc( 100vh + 20px);
 }
 
 .description h1 {
@@ -95,35 +99,65 @@ header {
   font-family: 'Montserrat', sans-serif; /* Fuente distinta */
 }
 
+/* Estilo para el párrafo de descripción */
+.description p { /* Tamaño de letra más grande */
+  margin-bottom: 50px; /* Margen inferior */
+  padding: 0% 25% 0% 25%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-button {
+  background-color: transparent; /* Sin relleno */
+  color: #B72E2E; /* Color del texto del botón */
+  padding: 10px 30px; /* Espaciado interno del botón */
+  border: 1px solid #B72E2E; /* Contorno rojo de 2 píxeles */
+  border-radius: 5px; /* Borde redondeado */
+  font-weight: bold; /* Negrita */
+  font-size: 22px;
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+}
+
+.contact-button:hover {
+  background-color: #B72E2E;
+  color: #fff;
+}
+
+
 
 /* -------------------------------- About Us  --------------------------- */
 .about-us {
-  text-align: left; /* Alinea el contenido a la izquierda */
-  padding: 40px 100px 40px 100px; /* Espaciado superior e inferior */
   display: flex; /* Usa el modelo de caja flexible (flexbox) */
-  align-items: center; /* Centra verticalmente los elementos */
+  align-items: center;
+  justify-content: space-between; 
+  margin: 50px auto;
+  height: 700px;
 }
 
 /* Estilo para la imagen en la sección "About Us" */
 .about-us img {
-  height: 300px;
-  border-radius: 10px; /* Borde redondeado */
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Estilo para el contenido de texto en la sección "About Us" */
 .about-us-text {
-  max-width: 600px; /* Ancho máximo del contenido de texto */
-  padding-right: 150px;
+  width: 60%;
+  max-width: 600px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
 }
 
-.about-us-text h2 {
-  color: #4F4C4C;
-  font-family: 'Montserrat', sans-serif;
-}
 
 .about-us-text p{
   color: #000;
-  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -156,7 +190,7 @@ header {
 
 .servicios {
   background-color: #F7F4F4;
-  padding: 60px;
+  padding: 60px 0px;
 }
 
 
@@ -164,7 +198,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   gap: 30px;
   margin: 20px auto;
@@ -362,6 +396,10 @@ header {
 
 
 @media screen and ( max-width : 900px ) {
+  .description p {
+    padding: 0px 10px;
+  }
+
   .modal_container {
     height: 600px;
     flex-direction: column;
@@ -385,4 +423,56 @@ header {
   }
 
 }
-/* Estilo para el body */
+
+
+@media screen and ( max-width : 691px) {
+  /* -------------------------------- Header  --------------------------- */
+  header {
+    display: none !important;
+  }
+  
+  .header_mobile {
+    display: flex;
+  }
+
+  .nav_mobile {
+    display: none;
+  }
+
+  /* -------------------------------- Descripcion  --------------------------- */
+  .description p {
+    padding: 0px 10px;
+  }
+
+  /* -------------------------------- About Us  --------------------------- */
+  .about-us {
+    flex-direction: column-reverse;
+  }
+
+  .about-us-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .about-us img {
+    width: 100%;
+  }
+
+  .about-us h2 {
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------- Servicios  --------------------------- */
+  .servicios {
+    background-color: #F7F4F4;
+    padding: 60px 0px;
+  }
+
+  .servicios .container {
+    justify-content: space-around;
+  }
+
+
+}
+
