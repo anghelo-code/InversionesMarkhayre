@@ -22,7 +22,7 @@
         <a href="#descripcion">Home</a>
         <a href="#about">Sobre Nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#">Contáctanos</a>
+        <a href="#contact">Contáctanos</a>
       </nav>
     </div>
 
@@ -35,7 +35,7 @@
         <a href="#descripcion">Home</a>
         <a href="#about">Sobre Nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#">Contáctanos</a>
+        <a href="#contact">Contáctanos</a>
       </nav>
     </div>
     
@@ -44,7 +44,7 @@
   <section class="description" id="descripcion">
     <h1>APLICACIONES EN LA MEDIDA</h1>
     <p>Realizamos proyectos de fabricación de estructuras metálicas, armado e instalación desde el servicio de cálculo y diseño estructural.</p>
-    <a class="contact-button" href="contacto.html">Contáctanos</a>
+    <a class="contact-button" href="#contact">Contáctanos</a>
   </section>
 
   <section class="destacados" id="destacados">
@@ -233,6 +233,37 @@
 
     </div>
   </section>
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <h3>Hable con nosotros</h3>
+    <form id="formulario_contacto" onsubmit="enviarMensajeCorreo(event)" class="form">
+      <div class="form_group">
+        <label for="nombre" class="form_label">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" class="contact_inputs">
+      </div>
+      
+      <div class="form_group">
+        <label for="mensaje" class="form_label">Escribe tu mensaje</label>
+        <textarea id="mensaje" placeholder="Tu mensaje" class="contact_inputs contact_textarea"></textarea>
+      </div>
+          
+      <button type="submit" class="contact-button">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_logo">
+        <img src="/img/logo.png" alt="Logo de la empresa">
+      </div>
+      <div class="informacion-contacto">
+        <p>RUC: 20605407651</p>
+        <p>Teléfono: <a href="https://wa.me/51940425225" target="_blank" style="color: #fff;">+51 940 425 225</a></p>
+        <p>Dirección: Av. Pachacutec S/N carretera Panamericana Barrio Accota Comunidad de Chumo</p>
+      </div>
+    </div>
+   
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
