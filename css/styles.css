@@ -103,3 +103,49 @@ header {
     color: #000;
     font-family: 'Open Sans', sans-serif;
 }
+
+.section-3 {
+    background-color: #F7F4F4;
+    padding: 70px 10% 70px 10%;
+}
+
+.section-3-first{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.space {
+    width: 30%;
+}
+
+.section-3-element {
+    display: flex;
+    flex: 1;
+    text-align: left;
+    width: 30%;
+    align-self: center;
+    margin: 0 auto;
+    min-width: 200px;
+}
+
+.section-3-element img{
+    width: 30px;
+    object-fit: contain;
+    align-self: baseline;
+    margin-top: 25px;
+}
+
+.section-3-element-text {
+    margin-left: 10px
+}
+
+.section-3-element-text h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4C4C;
+}
+
+.section-3-element-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
