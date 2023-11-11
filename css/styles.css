@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -61,7 +62,6 @@ header .container {
   float: left; /* Coloca el logo en la parte izquierda */
 }
 
-/* Estilo para las opciones de navegación */
 .nav {
   float: right; /* Coloca las opciones en la parte derecha */
 }
@@ -91,7 +91,7 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc( 100vh + 20px);
+  height: calc( 100vh + 30px);
 }
 
 .description h1 {
@@ -348,9 +348,96 @@ header .container {
 }
 
 
+/* --------------------------- Contact ---------------------------------- */
+.contact {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 82px 0px;
+}
+
+h3 {
+  color: #333;
+  font-size: 24px;
+}
+
+
+.form {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  position: relative;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/* Estilos de los campos de entrada */
+.contact_inputs {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.form_label {
+  color: #4F4C4C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.contact_textarea {
+  height: 150px; 
+}
+
+.contact_inputs:focus {
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+/* --------------------------- Footer ---------------------------------- */
+.footer {
+  background-color: #333; /* Color de fondo de la sección */
+  color: #fff; /* Color del texto */
+  
+}
+
+.footer .container {
+  padding: 0; /* Elimina el espaciado interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 15vh;
+}
+
+/* Estilos del logo */
+.footer_logo img {
+  height: 35px;
+  margin: 10px; /* Agrega margen alrededor del logo */
+}
+
+/* Estilos de la información de contacto */
+.informacion-contacto {
+  text-align: right; /* Alineación a la derecha */
+  margin: 10px; /* Agrega margen alrededor de la información de contacto */
+}
+
 
 /* --------------------------- Colors ---------------------------------- */
-
 .buttonRed {
   color: var(--red);
   border: solid var(--red) 1px;
@@ -425,7 +512,7 @@ header .container {
 }
 
 
-@media screen and ( max-width : 691px) {
+@media screen and ( max-width : 751px) {
   /* -------------------------------- Header  --------------------------- */
   header {
     display: none !important;
@@ -440,6 +527,10 @@ header .container {
   }
 
   /* -------------------------------- Descripcion  --------------------------- */
+  .description h1 {
+    font-size: 48px;
+  }
+
   .description p {
     padding: 0px 10px;
   }
@@ -473,6 +564,44 @@ header .container {
     justify-content: space-around;
   }
 
+  .servicios_article {
+    min-width: 274px;
+  }
+
+  /* -------------------------------- Footer  --------------------------- */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+
+  
+  /* Estilos de la información de contacto */
+  .informacion-contacto {
+    text-align: center;
+  }
+  
 
 }
 
+
+@media screen and ( max-width : 450px) {
+ .description h1 {
+  font-size: 35px;
+ }
+
+ .modal_content {
+  min-width: 270px;
+ }
+ 
+ .contact {
+  padding: 0;
+  margin: 20px 0px;
+  height: auto;
+ }
+
+ .form {
+  padding: 10px 0px;
+ } 
+}
