@@ -8,6 +8,30 @@ const closeModal = (idBtn) => {
   dialog.close();
 }
 
+
+function enviarMensajeCorreo(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById('nombre').value;
+  const mensaje = document.getElementById('mensaje').value;
+
+  // Reemplaza 'tu-correo@example.com' con tu dirección de correo electrónico
+  const correoDestino = 'tu-correo@example.com';
+  
+  // Crea un enlace "mailto" para enviar un correo electrónico
+  const enlaceCorreo = `mailto:${correoDestino}?subject=Mensaje%20de%20contacto&body=Nombre:%20${nombre}%0A%0AMensaje:%20${mensaje}`;
+  
+  // Abre el enlace para componer un correo en el cliente de correo predeterminado
+  window.location.href = enlaceCorreo;
+
+  // Desplazamiento suave hacia la parte superior después de enviar el formulario
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
 // Cambiar la opacidad del fondo del header al hacer scroll
 window.addEventListener("scroll", function() {
     var scrollPosition = window.scrollY;
