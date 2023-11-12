@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inversiones Markhayre</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="logo">
+        <img src="img/logo.png" alt="logomarca" height="40">
+      </div>
+
+      <nav class="nav">
+        <a href="#descripcion">Home</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contact">Contáctanos</a>
+      </nav>
+    </div>
+
+    <div class="container header_mobile">
+      <div class="logo_mobile">
+        <img src="img/logo.png" alt="logomarca" height="40">
+      </div>
+
+      <nav class="nav_mobile">
+        <a href="#descripcion">Home</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contact">Contáctanos</a>
+      </nav>
+    </div>
+    
+  </header>
+
+  <section class="description" id="descripcion">
+    <h1>APLICACIONES EN LA MEDIDA</h1>
+    <p>Realizamos proyectos de fabricación de estructuras metálicas, armado e instalación desde el servicio de cálculo y diseño estructural.</p>
+    <a class="contact-button" href="#contact">Contáctanos</a>
+  </section>
+
+  
+
+  <section class="destacados" id="destacados">
+    <h2>Destacados</h2>
+    <img src="./img/Ropa-de-soldador.jpg" alt="soldador" class="destacados_img">
+    <p class="destacados_p" >Conozca nuestros servicios en soldadura</p>
+    <img src="./img/Ropa-de-soldador.jpg" alt="soldador2" class="destacados_img">
+    <p class="destacados_p" >¿Desea alquilar equipos? Conozca nuestro servicio</p>
+  </section>
+
+
+  <section class="section-3">
+    <div class="section-3-first">
+        <div class="section-3-element">
+            <img src="img/icon1s3.png" alt="Icon de la sección 1">
+            <div class="section-3-element-text">
+                <h2>Tiempo</h2>
+                <p>Nuestra área de Producción cuenta con el personal calificado y realiza fabricaciones de acuerdo a los tiempos establecidos.</p>
+            </div>
+        </div>
+        <div class ="space"> </div>
+        <div class="section-3-element">
+            <img src="img/icon2s3.png" alt="Icon de la sección 2">
+            <div class="section-3-element-text">
+                <h2>Enfoque</h2>
+                <p>
+                  Empresa emergente que se especializa en la fabricación y diseño de estructuras metálicas, destacando por su enfoque en la calidad, la innovación en diseño y la sostenibilidad.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section-3-element">
+        <img src="img/icon3s3.png" alt="Icon de la sección 3">
+        <div class="section-3-element-text">
+            <h2>Especialistas</h2>
+            <p>Técnicos de amplia experiencia con los más altos estándares de calidad y la seguridad que requieren este tipo de construcciones.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-us container" >
+    <div class="about-us-text">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>
+        Somos Inversiones Markhayre, una empresa emergente dedicada a la fabricación de estructuras metálicas y diseño estructural. Aunque somos una empresa recién fundada, nuestro entusiasmo y pasión por la metalurgia y la ingeniería nos impulsan a destacar en la industria.
+      </p>
+      <br>
+      <p>
+        Inversiones Markhayre representa un nuevo capítulo en la industria de la construcción de estructuras metálicas. Aunque somos jóvenes, contamos con un equipo de profesionales altamente capacitados en ingeniería y diseño estructural, ansiosos por enfrentar desafíos y abrazar la innovación.
+      </p>
+
+    </div>
+    <img src="img/equipo.jpg" alt="Imagen sobre nosotros">
+  </section>
+  
+
+  <section class="servicios" id="servicios">
+    <h2>Servicios</h2>
+    <div  class="container">
+      <article class="servicios_article">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
+        
+        <div class="servicios_article-content">
+          <h3 class="servicios_article-title titleBlue">SISTEMAS DE SOLDADURA</h3>
+          <ul class="servicios_article-ul">
+            <li class="servicios_article-item">Soldadura por arco eléctrico</li>
+            <li class="servicios_article-item">Soldadura oxiacetilénica</li>
+            <li class="servicios_article-item">Soldadura de arco metálico con gas</li>
+          </ul>
+
+          <button 
+            class="servicios_article-button buttonBLue" 
+            onclick="openModal('modal1')"
+          >
+            Saber más
+          </button>
+        </div>
+
+        <dialog id="modal1" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titleBlue">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button modal_content-button buttonBLue" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal1')" >x</button>
+          </div>
+          
+        </dialog>
+      </article>
+
+      <article class="servicios_article">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
+
+        <div class="servicios_article-content">
+          <h3 class="servicios_article-title titlePurple">MONTAJE DE ESTRUCTURAS</h3>
+          <ul class="servicios_article-ul">
+            <li class="servicios_article-item">Estructuras en acero</li>
+            <li class="servicios_article-item">Soldadura para conexión de estructuras</li>
+            <li class="servicios_article-item">Tipos de soldadura</li>
+          </ul>
+
+          <button 
+            class="servicios_article-button buttonPurple" 
+            onclick="openModal('modal2')"
+          >
+            Saber más
+          </button>
+        </div>
+
+        <dialog id="modal2" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titlePurple">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonPurple" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal2')" >x</button>
+          </div>
+          
+        </dialog>
+      </article>
+
+      <article class="servicios_article">
+        <img src="./img/soldando.png" alt=""  class="servicios_article-img">
+        <div class="servicios_article-content">
+          <h3 class="servicios_article-title titleRed">ANCLAJES Y FIJACIONES DE ESTRUCTURAS</h3>
+          <ul class="servicios_article-ul">
+            <li class="servicios_article-item">Pernos de anclaje para cimientos</li>
+            <li class="servicios_article-item">Cimiento para construcciones de acero</li>
+          </ul>
+
+          <button 
+            class="servicios_article-button buttonRed" 
+            onclick="openModal('modal3')"
+          >
+            Saber más
+          </button>
+        </div>
+
+        <dialog id="modal3" class="modal">
+          <div class="modal_container">
+            <div  class="modal_img"></div>
+            <div class="modal_content">
+              <h3 class="modal_content-title titleRed">SISTEMAS DE SOLDADURA</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Soldadura por arco eléctrico</li>
+                <li class="modal_content-item" >Soldadura oxiacetilénica</li>
+                <li class="modal_content-item" >Soldadura de arco metálico con gas MIG (Metal Inert Gas)</li>
+                <li class="modal_content-item" >La soldadura de arco, tungsteno y gas (GTAW), o soldadura de tungsteno y gas inerte (TIG) </li>
+              </ul>
+
+              <button class="modal_content-button buttonRed" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal3')" >x</button>
+          </div>
+          
+        </dialog>
+      </article>
+
+      <article class="servicios_article">
+        <img src="./img/mantenimiento.jpg" alt=""  class="servicios_article-img">
+        <div class="servicios_article-content">
+          <h3 class="servicios_article-title titleBlue">MANTENIMIENTO DE ESTRUCTURAS</h3>
+          <ul class="servicios_article-ul">
+            <li class="servicios_article-item">Protección contra la corrosión</li>
+            <li class="servicios_article-item">Reciclaje para residuos de construcción</li>
+            <li class="servicios_article-item">Estrategias de mantenimiento y arreglo</li>
+          </ul>
+
+          <button 
+            class="servicios_article-button buttonBLue" 
+            onclick="openModal('modal4')"
+          >
+            Saber más
+          </button>
+        </div>
+
+        <dialog id="modal4" class="modal">
+          <div class="modal_container">
+            <img src="./img/mantenimiento.jpg" alt="" class="modal_img">
+            <div class="modal_content">
+              <h3 class="modal_content-title titleBlue">MANTENIMIENTO DE ESTRUCTURAS</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Protección contra la corrosión</li>
+                <li class="modal_content-item" >Reciclaje de residuos de construcción</li>
+                <li class="modal_content-item" >Consejos para el mantenimiento de su edificación de acero o estructura metálica</li>
+                <li class="modal_content-item" >Mantenimiento de estructuras y componentes de acero</li>
+                <li class="modal_content-item" >Reparación y rehabilitación de estructuras</li>
+                <li class="modal_content-item" >Estrategias de mantenimiento y arreglo</li>
+              </ul>
+
+              <button onclick="location.href='https://api.whatsapp.com/send?phone=+51940425225&text=Buenos%20d%C3%ADas,%20quisiera%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20en%20mantenimiento%20de%20estructuras%20de%20la%20empresa%20Markhayre'"class="modal_content-button buttonBLue" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal4')" >x</button>
+          </div>
+          
+        </dialog>
+      </article>
+
+      <article class="servicios_article">
+        <img src="./img/alquiler.jpg" alt=""  class="servicios_article-img">
+        <div class="servicios_article-content">
+          <h3 class="servicios_article-title titleRed">SERVICIO DE ALQUILER DE EQUIPOS</h3>
+          <ul class="servicios_article-ul">
+            <li class="servicios_article-item">Moto soldadores</li>
+            <li class="servicios_article-item">Equipos de soldadura, corte, etc.</li>
+            <li class="servicios_article-item">Andamios metálicos, escaleras, etc.</li>
+          </ul>
+
+          <button 
+            class="servicios_article-button buttonRed" 
+            onclick="openModal('modal5')"
+          >
+            Saber más
+          </button>
+        </div>
+
+        <dialog id="modal5" class="modal">
+          <div class="modal_container">
+            <img src="./img/alquiler.jpg" alt="" class="modal_img">
+            <div class="modal_content">
+              <h3 class="modal_content-title titleRed">SERVICIO DE ALQUILER DE EQUIPOS</h3>
+              <ul class="modal_content-ul">
+                <li class="modal_content-item" >Excavadora VOLVO EC210LC 2000</li>
+                <li class="modal_content-item" >JIRO 360 grados</li>
+                <li class="modal_content-item" >Moto soldadores</li>
+                <li class="modal_content-item" >Equipos de soldadura, corte, etc.</li>
+                <li class="modal_content-item" >Andamios metálicos, escaleras, etc.</li>
+              </ul>
+
+              <button onclick="location.href='https://api.whatsapp.com/send?phone=+51940425225&text=Buenos%20d%C3%ADas,%20quisiera%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20en%20alquiler%20de%20equipos%20de%20la%20empresa%20Markhayre'" class="modal_content-button buttonRed" >Contactar</button>
+            </div>
+            
+            <button class="modal-btnclose" onclick="closeModal('modal5')" >x</button>
+          </div>
+          
+        </dialog>
+      </article>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <h3>Hable con nosotros</h3>
+    <form id="formulario_contacto" onsubmit="enviarMensajeCorreo(event)" class="form">
+      <div class="form_group">
+        <label for="nombre" class="form_label">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" class="contact_inputs">
+      </div>
+      
+      <div class="form_group">
+        <label for="mensaje" class="form_label">Escribe tu mensaje</label>
+        <textarea id="mensaje" placeholder="Tu mensaje" class="contact_inputs contact_textarea"></textarea>
+      </div>
+          
+      <button type="submit" class="contact-button">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_logo">
+        <img src="/img/logo.png" alt="Logo de la empresa">
+      </div>
+      <div class="informacion-contacto">
+        <p>RUC: 20605407651</p>
+        <p>Teléfono: <a href="https://wa.me/51940425225" target="_blank" style="color: #fff;">+51 940 425 225</a></p>
+        <p>Dirección: Av. Pachacutec S/N carretera Panamericana Barrio Accota Comunidad de Chumo</p>
+      </div>
+    </div>
+   
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
