@@ -18,6 +18,10 @@ h2 {
   margin-bottom: 45px;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --purple: #690F8E;
   --red: #B00024;
@@ -53,18 +57,19 @@ header .container {
 }
 
 
-.header_mobile {
-  display: none !important;
+.header_icon {
+  display: none;
+  right: 20px;
+  position: absolute;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
 }
 
-/* Estilo para el logo de la marca */
-.logo {
-  float: left; /* Coloca el logo en la parte izquierda */
+#check {
+  display: none;
 }
 
-.nav {
-  float: right; /* Coloca las opciones en la parte derecha */
-}
 
 /* Estilo específico para los botones de navegación */
 .nav a {
@@ -561,16 +566,49 @@ h3 {
 
 @media screen and ( max-width : 751px) {
   /* -------------------------------- Header  --------------------------- */
-  header {
-    display: none !important;
-  }
-  
-  .header_mobile {
-    display: flex;
+  .header_icon {
+    display: inline-flex;
   }
 
-  .nav_mobile {
+  .header_icon #close_icon {
     display: none;
+  }
+
+  #check:checked~.header_icon #menu_icon {
+    display: none;
+  }
+
+  #check:checked~.header_icon #close_icon {
+    display: block;
+  }
+
+  .nav {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+  #check:checked~.nav {
+    height: 19rem;
+  }
+
+  .nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.1 rem;
+    font-weight: normal;
+    margin: 1.5rem 0;
+    transform: translateY(-50px);
+    transition: .3s ease;
+  }
+
+  #check:checked~.nav a {
+    transform: translateY(0);
   }
 
   /* -------------------------------- Descripcion  --------------------------- */
