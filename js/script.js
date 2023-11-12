@@ -46,3 +46,18 @@ window.addEventListener("scroll", function() {
     // Aplica la opacidad al fondo del header
     header.style.backgroundColor = "rgba(51, 51, 51, " + opacity + ")";
 });
+
+// Primero, seleccionamos todos los enlaces y el checkbox
+const links = document.querySelectorAll('.nav a');
+const checkbox = document.getElementById('check');
+
+// Luego, agregamos un event listener a cada enlace
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    // Aquí usamos window.matchMedia() para verificar si el ancho de la pantalla es menor de 760px
+    if(window.matchMedia('(max-width: 760px)').matches) {
+      // Si es así, desmarcamos el checkbox
+      checkbox.checked = false;
+    }
+  });
+});
