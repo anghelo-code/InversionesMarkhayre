@@ -716,3 +716,19 @@ h3 {
     width: 80%;
   }
 }
+/* Estilos para el botón de WhatsApp */
+.boton-whatsapp {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+.boton-whatsapp a {
+  display: block;
+}
+
+/* Estilos para la imagen del botón de WhatsApp */
+.boton-whatsapp img {
+  width: 65px; /* Ajusta el tamaño de la imagen según el valor en el atributo "width" */
+}
